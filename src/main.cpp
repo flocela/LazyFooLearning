@@ -31,11 +31,11 @@ bool init()
 bool loadMedia()
 {
 	bool success = true;
-	gHelloWorld = SDL_LoadBMP("02_getting_an _image_on_the_screen/hello_world.bmp");
+	gHelloWorld = SDL_LoadBMP("./hello_world.bmp");
 	if(gHelloWorld == NULL)
 	{
 		printf("Unable to load image %s! SDL Error: %s\n",
-				"02_getting_an_image_on_the_Screen/hellow_world.bmp", SDL_GetError());
+				"hello_world.bmp", SDL_GetError());
 		success =false;
 	}
 	return success;
